@@ -12,6 +12,7 @@
   <meta name="keywords" content="free html template, portfolio, html5, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/today.js"></script>
 </head>
 <body>
 
@@ -39,13 +40,32 @@
 			</div>
 		</div>
 	</div>
+	
+	<script>
+		
+		var r=parseInt((Math.random()*10));
+          arr=new Array();
+          arr[0]="I HAVE A DREAM";
+          arr[1]="LESS IS MORE";
+          arr[2]="等风来，不如追风去";
+          arr[3]="风雪一更，共度余生";
+          arr[4]="一生随性，喜欢就好";
+          arr[5]="花有重开日，人无再少年";
+          arr[6]="余生有你，相逢甚喜";
+          arr[7]="一日不见，如隔三秋";
+          arr[8]="凡是过去，皆为序曲";
+          arr[9]="永远相信美好的事情即将发生";
+		
+	</script>
 
 	<header class="header">
 		<div class="introduction">
 			<h1 class="introduction__content">
-				<span class="introduction__content-el introduction__content-el--name">Alix Liu</span>
+				<span class="introduction__content-el introduction__content-el--name" id="localtime">
+					<script src="assets/js/today.js" type="text/x-javascript"></script></span>
 				<span class="introduction__content-el introduction__content-el--description">H E L L O</span>
-				<span class="introduction__content-el introduction__content-el--job">等风来，不如追风去</span>
+				<span class="introduction__content-el introduction__content-el--job">
+					<script>document.write(arr[r]);</script></span>
 			</h1>
 		  <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
 		</div>
@@ -134,6 +154,7 @@
 			</a>
 		</div>
 	</footer>
+	
 
 	<script src="https://cdn.bootcss.com/jquery/1.2.3/jquery.min.js"></script>
 
