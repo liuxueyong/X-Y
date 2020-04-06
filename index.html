@@ -43,18 +43,38 @@
 	
 	<script>
 		
-		var r=parseInt((Math.random()*10));
+		var x=parseInt((Math.random()*2));
+          alx=new Array();
+          alx[0]="H E L L O";
+          alx[1]="D R E A M";
+		
+	</script>
+	
+	<script>
+		
+		var r=parseInt((Math.random()*20));
           arr=new Array();
-          arr[0]="I HAVE A DREAM";
-          arr[1]="LESS IS MORE";
-          arr[2]="等风来，不如追风去";
-          arr[3]="风雪一更，共度余生";
-          arr[4]="一生随性，喜欢就好";
-          arr[5]="花有重开日，人无再少年";
-          arr[6]="余生有你，相逢甚喜";
-          arr[7]="一日不见，如隔三秋";
-          arr[8]="凡是过去，皆为序曲";
-          arr[9]="永远相信美好的事情即将发生";
+          arr[ 0]="LESS IS MORE";
+          arr[ 1]="等风来，不如追风去";
+          arr[ 2]="凡是过去，皆为序曲";
+          arr[ 3]="风雪一更，共度余生";
+          arr[ 4]="一生随性，喜欢就好";
+          arr[ 5]="不忘初心，方得始终";
+          arr[ 6]="余生有你，相逢甚喜";
+          arr[ 7]="一日不见，如隔三秋";
+          arr[ 8]="夜色匆忙，暮暮是你";
+          arr[ 9]="一生所求，爱与自由";
+          arr[10]="永远相信美好的事情即将发生";
+		  arr[11]="花有重开日，人无再少年";
+		  arr[12]="斯人若彩虹，遇上方知有";
+		  arr[13]="人生如逆旅，我亦是行人";
+		  arr[14]="永远年轻，永远热泪盈眶";
+		  arr[15]="自律的最好状态就是享受孤独";
+		  arr[16]="你保护世界，我保护你";
+		  arr[17]="风月都浪漫，何况是你";
+		  arr[18]="总之岁月漫长，然而值得等待";
+		  arr[19]="世间所有的相遇，都是久别重逢";
+		  arr[20]="人生若只如初见";
 		
 	</script>
 
@@ -63,7 +83,8 @@
 			<h1 class="introduction__content">
 				<span class="introduction__content-el introduction__content-el--name" id="localtime">
 					<script src="assets/js/today.js" type="text/x-javascript"></script></span>
-				<span class="introduction__content-el introduction__content-el--description">H E L L O</span>
+				<span class="introduction__content-el introduction__content-el--description">
+				    <script>document.write(alx[x]);</script></span>
 				<span class="introduction__content-el introduction__content-el--job">
 					<script>document.write(arr[r]);</script></span>
 			</h1>
