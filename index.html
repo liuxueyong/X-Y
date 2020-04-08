@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>LXY</title>
+  <title>LXY | 生日快楽</title>
   <link rel="Bookmark" type="image/x-icon" href="assets/img/favicon.ico" />
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -45,8 +45,14 @@
 		
 		var x=parseInt((Math.random()*2));
           alx=new Array();
-          alx[0]="H E L L O";
-          alx[1]="D R E A M";
+          alx[0]="生 日 快 楽";
+          alx[1]="BIRTHDAY";
+		
+		  function show(){
+           index = Math.floor(Math.random() * alx.length);
+               document.getElementById('alxs').innerHTML = alx[index];
+          }
+           setInterval(show,1000*20);
 		
 	</script>
 	
@@ -76,16 +82,23 @@
 		  arr[19]="世间所有的相遇，都是久别重逢";
 		  arr[20]="人生若只如初见";
 		
+		  function show(){
+           index = Math.floor(Math.random() * arr.length);
+               document.getElementById('arrs').innerHTML = arr[index];
+          }
+           setInterval(show,1000*10);
+		
 	</script>
 
 	<header class="header">
 		<div class="introduction">
 			<h1 class="introduction__content">
 				<span class="introduction__content-el introduction__content-el--name" id="localtime">
-					<script src="assets/js/today.js" type="text/x-javascript"></script></span>
-				<span class="introduction__content-el introduction__content-el--description">
+					<!--<script src="assets/js/today.js" type="text/x-javascript"></script>-->
+				    1999 . 4 . 10</span>
+				<span class="introduction__content-el introduction__content-el--description" id="alxs">
 				    <script>document.write(alx[x]);</script></span>
-				<span class="introduction__content-el introduction__content-el--job">
+				<span class="introduction__content-el introduction__content-el--job" id="arrs">
 					<script>document.write(arr[r]);</script></span>
 			</h1>
 		  <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
