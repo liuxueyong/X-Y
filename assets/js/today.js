@@ -4,9 +4,9 @@ function showLocale(objD)
 var str,colorhead,colorfoot;
 	
 var ww = objD.getDay();
-if ( ww==0 ) colorhead="<font color=\"#d0d0d0\">";
+if ( ww==0 ) colorhead="<font color=\"#9e9e9e\">";
 if ( ww > 0 && ww < 6 ) colorhead="<font color=\"#9e9e9e\">";
-if ( ww==6 ) colorhead="<font color=\"#d0d0d0\">";
+if ( ww==6 ) colorhead="<font color=\"#9e9e9e\">";
 if (ww==0) ww="SUNDAY";
 if (ww==1) ww="MONDAY";
 if (ww==2) ww="WEDNESDAY";
