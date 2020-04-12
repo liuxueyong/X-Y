@@ -1,4 +1,4 @@
-// JavaScript Document
+// 主页-时间同步
 function showLocale(objD)
 {
 var str,colorhead,colorfoot;
