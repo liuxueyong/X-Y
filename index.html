@@ -121,7 +121,12 @@
 							<a class="transform-link" href="mailto:alpha@lxy.plus">我要催更</a>
 						</div>
 						<div class="work__visual">
-							<img src="assets/img/qrcode/wechat.jpg" alt="WX-Qr">
+						    <img onmousedown="lighton()" src="assets/img/qrcode/wechat.jpg" id="wxqr" alt="WX-Qr">
+				             <script>
+				               function lighton(){
+				               document.getElementById('wxqr').src="assets/img/qrcode/wechat.gif";	
+				               }
+					       </script>
 						</div>
 					</li>
 				</ul>
