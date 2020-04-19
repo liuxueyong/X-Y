@@ -15,10 +15,21 @@
   <script src="assets/js/today.js"></script>
 </head>
 <body>
+	
+	<script>
+     tips = new Array(2);
+     tips[0] = '稍等片刻';
+     tips[1] = '马上就好';
+     function show(){
+     index = Math.floor(Math.random() * tips.length);
+     document.getElementById('welcome').innerHTML = tips[index];
+     }
+     setInterval(show,1000*5);
+	</script>
 
 	<div class="splashscreen">
 		<div class="preloader">
-			<span class="preloader__text">Welcome</span>
+			<span class="preloader__text" id="welcome">Welcome</span>
 		</div>
 	</div>
 
