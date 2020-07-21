@@ -17,9 +17,17 @@
 <body>
 	
 	<script>
-     tips = new Array(2);
-     tips[0] = '稍等片刻';
-     tips[1] = 'Loading...';
+     tips = new Array(10);
+     tips[0] = '你好';
+     tips[1] = 'Hello';
+	 tips[2] = 'こんにちは';
+	 tips[3] = 'Bonjour';
+     tips[4] = 'Cześć';
+	 tips[5] = 'Ahoj';
+	 tips[6] = 'Olá';
+     tips[7] = '안녕하세요';
+	 tips[8] = 'Hej';
+	 tips[9] = 'Tere';
      function show(){
      index = Math.floor(Math.random() * tips.length);
      document.getElementById('welcome').innerHTML = tips[index];
