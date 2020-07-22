@@ -17,10 +17,10 @@
 <body>
 	
 	<script>
-     tips = new Array(3);
-     tips[0] = '你好 ！';
-     tips[1] = 'こんにちは';
-	 tips[2] = '안녕하세요';
+     tips = new Array(2);
+     tips[0] = '稍等片刻';
+     tips[1] = 'もうすぐだよ';
+	 tips[2] = 'Please Wait'
      function show(){
      index = Math.floor(Math.random() * tips.length);
      document.getElementById('welcome').innerHTML = tips[index];
@@ -30,7 +30,7 @@
 
 	<div class="splashscreen">
 		<div class="preloader">
-			<span class="preloader__text" id="welcome">Hello</span>
+			<span class="preloader__text" id="welcome">Welcome</span>
 		</div>
 	</div>
 
