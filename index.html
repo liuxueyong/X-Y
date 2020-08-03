@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/today.js"></script>
+  <script src="assets/js/cd-time.js"></script>
 </head>
 <body>
 	
@@ -91,8 +92,14 @@
 	<header class="header">
 		<div class="introduction">
 			<h1 class="introduction__content">
-				<span class="introduction__content-el introduction__content-el--name" id="localtime">
-					<script src="assets/js/today.js" type="text/x-javascript"></script>
+				<span class="introduction__content-el introduction__content-el--name">
+					<p class="hero-paragraph is-revealing" id="CountMsg" style="color: #FFAE00">站点剩余存活期限:
+                                   <span id="td"style="color: #FF5F00">00 DAY</span>
+	                                    &nbsp;
+                                   <span id="th" style="color: #FF3F00">00 :</span>
+                                   <span id="tm" style="color: #FF696C">00 :</span>
+                                   <span id="ts" style="color: #FFACAD">00  </span>
+								       </p>
 				    </span>
 				<span class="introduction__content-el introduction__content-el--description">
 				    <script>document.write(alx[x]);</script></span>
